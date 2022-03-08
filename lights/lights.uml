@@ -99,13 +99,30 @@ relized by: Juan Andres Castano</body>
         <packagedElement xmi:type="uml:Class" xmi:id="_BKV6MJ49Eeyvvp3yRQZ3Yg" name="fsm" classifierBehavior="_DGCx4J49Eeyvvp3yRQZ3Yg">
           <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_DGCx4J49Eeyvvp3yRQZ3Yg" name="InteriorLights">
             <region xmi:type="uml:Region" xmi:id="_D8ppwJ49Eeyvvp3yRQZ3Yg" name="Region1">
-              <transition xmi:type="uml:Transition" xmi:id="_K3EMQJ4_Eeyvvp3yRQZ3Yg" source="_FmbZEJ4_Eeyvvp3yRQZ3Yg" target="_G5SvIJ4_Eeyvvp3yRQZ3Yg"/>
-              <transition xmi:type="uml:Transition" xmi:id="_LeoikJ4_Eeyvvp3yRQZ3Yg" source="_G5SvIJ4_Eeyvvp3yRQZ3Yg" target="_Gl5SAJ4_Eeyvvp3yRQZ3Yg"/>
-              <transition xmi:type="uml:Transition" xmi:id="_MA47EJ4_Eeyvvp3yRQZ3Yg" source="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" target="_G5SvIJ4_Eeyvvp3yRQZ3Yg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_i5FiUJ8lEeykmrDilIJtrQ" source="_GSNBcJ8lEeykmrDilIJtrQ" target="_NsxVkJ8lEeykmrDilIJtrQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_jtoksJ8lEeykmrDilIJtrQ" source="_NsxVkJ8lEeykmrDilIJtrQ" target="_GSNBcJ8lEeykmrDilIJtrQ"/>
+              <transition xmi:type="uml:Transition" xmi:id="_SXMZIJ8sEeykmrDilIJtrQ" source="_FmbZEJ4_Eeyvvp3yRQZ3Yg" target="_GSNBcJ8lEeykmrDilIJtrQ"/>
               <subvertex xmi:type="uml:Pseudostate" xmi:id="_FmbZEJ4_Eeyvvp3yRQZ3Yg" name=""/>
-              <subvertex xmi:type="uml:State" xmi:id="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" name="Validating Interior Lights ON"/>
-              <subvertex xmi:type="uml:State" xmi:id="_G5SvIJ4_Eeyvvp3yRQZ3Yg" name="interior Lights OFF"/>
-              <subvertex xmi:type="uml:State" xmi:id="_QVc-IJ8cEeyZRa32aA7ZXQ" name="Interior Lights ON"/>
+              <subvertex xmi:type="uml:State" xmi:id="_GSNBcJ8lEeykmrDilIJtrQ" name="Disabled">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_0cWkwJ8lEeykmrDilIJtrQ">
+                  <language>C</language>
+                  <body>backlight OFF</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_NsxVkJ8lEeykmrDilIJtrQ" name="lights enabled">
+                <region xmi:type="uml:Region" xmi:id="_RzFqsJ8lEeykmrDilIJtrQ" name="Region1">
+                  <transition xmi:type="uml:Transition" xmi:id="_lToSIJ8lEeykmrDilIJtrQ" source="_RzIG8J8lEeykmrDilIJtrQ" target="_VzF8cJ8lEeykmrDilIJtrQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_l-qzMJ8lEeykmrDilIJtrQ" source="_VzF8cJ8lEeykmrDilIJtrQ" target="_Yma_sJ8lEeykmrDilIJtrQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_nma0IJ8lEeykmrDilIJtrQ" source="_Yma_sJ8lEeykmrDilIJtrQ" target="_RzIG8J8lEeykmrDilIJtrQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_t-CdgJ8lEeykmrDilIJtrQ" source="_VzF8cJ8lEeykmrDilIJtrQ" target="_RzIG8J8lEeykmrDilIJtrQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_ux_C8J8lEeykmrDilIJtrQ" source="_Yma_sJ8lEeykmrDilIJtrQ" target="_VzF8cJ8lEeykmrDilIJtrQ"/>
+                  <transition xmi:type="uml:Transition" xmi:id="_TNIioJ8sEeykmrDilIJtrQ" source="_RFWWwJ8sEeykmrDilIJtrQ" target="_RzIG8J8lEeykmrDilIJtrQ"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_RzIG8J8lEeykmrDilIJtrQ" name="interior Lights OFF"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_VzF8cJ8lEeykmrDilIJtrQ" name="validating activation"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_Yma_sJ8lEeykmrDilIJtrQ" name="Interior Lights ON"/>
+                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_RFWWwJ8sEeykmrDilIJtrQ" name=""/>
+                </region>
+              </subvertex>
             </region>
           </ownedBehavior>
         </packagedElement>
@@ -289,6 +306,12 @@ relized by: Juan Andres Castano</body>
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_XUAVkJ8lEeykmrDilIJtrQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XUEnAJ8lEeykmrDilIJtrQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_m1gHsJ4sEeyvvp3yRQZ3Yg" base_Class="_m1Yy8J4sEeyvvp3yRQZ3Yg"/>
