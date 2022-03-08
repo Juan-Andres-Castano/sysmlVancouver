@@ -117,9 +117,24 @@ relized by: Juan Andres Castano</body>
                   <transition xmi:type="uml:Transition" xmi:id="_t-CdgJ8lEeykmrDilIJtrQ" source="_VzF8cJ8lEeykmrDilIJtrQ" target="_RzIG8J8lEeykmrDilIJtrQ"/>
                   <transition xmi:type="uml:Transition" xmi:id="_ux_C8J8lEeykmrDilIJtrQ" source="_Yma_sJ8lEeykmrDilIJtrQ" target="_VzF8cJ8lEeykmrDilIJtrQ"/>
                   <transition xmi:type="uml:Transition" xmi:id="_TNIioJ8sEeykmrDilIJtrQ" source="_RFWWwJ8sEeykmrDilIJtrQ" target="_RzIG8J8lEeykmrDilIJtrQ"/>
-                  <subvertex xmi:type="uml:State" xmi:id="_RzIG8J8lEeykmrDilIJtrQ" name="interior Lights OFF"/>
-                  <subvertex xmi:type="uml:State" xmi:id="_VzF8cJ8lEeykmrDilIJtrQ" name="validating activation"/>
-                  <subvertex xmi:type="uml:State" xmi:id="_Yma_sJ8lEeykmrDilIJtrQ" name="Interior Lights ON"/>
+                  <subvertex xmi:type="uml:State" xmi:id="_RzIG8J8lEeykmrDilIJtrQ" name="interior Lights OFF">
+                    <entry xmi:type="uml:OpaqueBehavior" xmi:id="_ed86IJ8tEeyrfuJzIROC9Q">
+                      <language>C</language>
+                      <body>backlight WHITE</body>
+                    </entry>
+                  </subvertex>
+                  <subvertex xmi:type="uml:State" xmi:id="_VzF8cJ8lEeykmrDilIJtrQ" name="validating activation">
+                    <entry xmi:type="uml:OpaqueBehavior" xmi:id="_hbuS0J8tEeyrfuJzIROC9Q">
+                      <language>C</language>
+                      <body>backlight GREEN</body>
+                    </entry>
+                  </subvertex>
+                  <subvertex xmi:type="uml:State" xmi:id="_Yma_sJ8lEeykmrDilIJtrQ" name="Interior Lights ON">
+                    <entry xmi:type="uml:OpaqueBehavior" xmi:id="_jSOhcJ8tEeyrfuJzIROC9Q">
+                      <language>C</language>
+                      <body>backlight GREEN</body>
+                    </entry>
+                  </subvertex>
                   <subvertex xmi:type="uml:Pseudostate" xmi:id="_RFWWwJ8sEeykmrDilIJtrQ" name=""/>
                 </region>
               </subvertex>
