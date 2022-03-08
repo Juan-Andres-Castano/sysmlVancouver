@@ -103,8 +103,9 @@ relized by: Juan Andres Castano</body>
               <transition xmi:type="uml:Transition" xmi:id="_LeoikJ4_Eeyvvp3yRQZ3Yg" source="_G5SvIJ4_Eeyvvp3yRQZ3Yg" target="_Gl5SAJ4_Eeyvvp3yRQZ3Yg"/>
               <transition xmi:type="uml:Transition" xmi:id="_MA47EJ4_Eeyvvp3yRQZ3Yg" source="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" target="_G5SvIJ4_Eeyvvp3yRQZ3Yg"/>
               <subvertex xmi:type="uml:Pseudostate" xmi:id="_FmbZEJ4_Eeyvvp3yRQZ3Yg" name=""/>
-              <subvertex xmi:type="uml:State" xmi:id="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" name="Interior Lights ON"/>
+              <subvertex xmi:type="uml:State" xmi:id="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" name="Validating Interior Lights ON"/>
               <subvertex xmi:type="uml:State" xmi:id="_G5SvIJ4_Eeyvvp3yRQZ3Yg" name="interior Lights OFF"/>
+              <subvertex xmi:type="uml:State" xmi:id="_QVc-IJ8cEeyZRa32aA7ZXQ" name="Interior Lights ON"/>
             </region>
           </ownedBehavior>
         </packagedElement>
