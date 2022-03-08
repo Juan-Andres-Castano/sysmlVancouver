@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:architecture="http://www.eclipse.org/papyrus/infra/core/architecture" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <di:SashWindowsMngr>
+    <sashModel currentSelection="/0/@sashModel/@windows.0/@children.0" restoreActivePage="true">
+      <windows>
+        <children xsi:type="di:TabFolder" currentSelection="/0/@sashModel/@windows.0/@children.0/@children.41">
+          <children>
+            <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_QYWNAF0kEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_Is5y8F3iEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_gZ7IMF6uEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_jb3PMF6uEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_OpS1sF3eEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_WYX_sFO2EeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_ON_lIGKREey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_l0qI4GKbEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_JcGM0FejEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_O65cQGMyEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_Uk05MGMyEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_QOttYGNaEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_V5p28GNaEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_mbvzcGNeEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_g9tLgGNgEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_QhFNgGQPEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_U0EssGQPEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_j8wbcFOaEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_HbTs0FOdEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_sMZ7cFOwEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_GIypAFejEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_fxFY8F0hEey7usJ9QMtERw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_S4gskFhWEeyvNLF48Hn8sw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_aptuQIUoEeyJsrxDjNdXzQ"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_nUBP8FkxEey9idEsPC2uiw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_oj83cIXLEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_jMVjcIXUEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_qAP_4IXXEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_pcHQsIXaEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_oci7AIXjEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_z-tWoIXjEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_3myQkYXjEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_Utm5AFkyEey9idEsPC2uiw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_DEkV8FeWEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_LZBBkIgsEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_tSAGgIgyEeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_pWQyUIn2EeyZnaV9wiQPVw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_XzNi0FOyEeyGiZfKQRKpLw"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_vQVNcI2uEeyPOdeXIuhdwA"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_Vrxd8JD3EeybrNdGdwpZog"/>
+          </children>
+          <children>
+            <emfPageIdentifier href="platform:/resource/Tas/model.notation#_IV3U4JP5EeyK8smHilxLVg"/>
+          </children>
+        </children>
+      </windows>
+    </sashModel>
+  </di:SashWindowsMngr>
+  <architecture:ArchitectureDescriptionPreferences>
+    <viewpointIds>org.eclipse.papyrus.sysml16.standard.modeling</viewpointIds>
+  </architecture:ArchitectureDescriptionPreferences>
+</xmi:XMI>

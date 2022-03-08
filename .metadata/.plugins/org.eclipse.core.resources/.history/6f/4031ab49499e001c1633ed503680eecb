@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_RJzswJ4rEeyvvp3yRQZ3Yg" name="lights">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_RNIGgJ4rEeyvvp3yRQZ3Yg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_RNU60J4rEeyvvp3yRQZ3Yg">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Tz57gJ4rEeyvvp3yRQZ3Yg" name="Requirements">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_gKCoYJ5EEeyvvp3yRQZ3Yg">
+        <body>mar -7 2022&#xD;
+relized by: Juan Andres Castano</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Jxr2YJ4wEeyvvp3yRQZ3Yg" name="Requirement: TMS outputs">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_P_y-cJ4wEeyvvp3yRQZ3Yg" name="TMS outputs &quot;TMS Outside Indicator light&quot;"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_tWpjsJ4wEeyvvp3yRQZ3Yg" name="TMS Outputs &quot;PLC ID&quot;"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_TJdWsJ4zEeyvvp3yRQZ3Yg" name="Interior Passanger Lights">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_-BwpkJ5FEeyvvp3yRQZ3Yg" name="Emergency mode"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_-Qa7MJ5GEeyvvp3yRQZ3Yg" name="TMS force interior lights"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_T3DFYJ5HEeyvvp3yRQZ3Yg" name="DCP force interior lights."/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_rHWjIJ5HEeyvvp3yRQZ3Yg" name="--->?"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9UXtMJ5HEeyvvp3yRQZ3Yg" name="automatic mode behavior--?"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_RzA7oJ5IEeyvvp3yRQZ3Yg" name="interior lights in standby Mode"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_dqdqwJ5IEeyvvp3yRQZ3Yg" name="Internal Lights in Default mode"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nWxW0J4uEeyvvp3yRQZ3Yg" name="useCases">
+        <nestedClassifier xmi:type="uml:Actor" xmi:id="_r2lxEJ4uEeyvvp3yRQZ3Yg" name="TMS">
+          <generalization xmi:type="uml:Generalization" xmi:id="_2qG-AJ4uEeyvvp3yRQZ3Yg" general="_uH8IoJ4uEeyvvp3yRQZ3Yg"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="__gaQUJ4uEeyvvp3yRQZ3Yg" general="_64CXAJ4uEeyvvp3yRQZ3Yg"/>
+          <generalization xmi:type="uml:Generalization" xmi:id="_V3xT4J4vEeyvvp3yRQZ3Yg" general="_P2ML8J4vEeyvvp3yRQZ3Yg"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:UseCase" xmi:id="_uH8IoJ4uEeyvvp3yRQZ3Yg" name="Control Interior Lights"/>
+        <nestedClassifier xmi:type="uml:UseCase" xmi:id="_64CXAJ4uEeyvvp3yRQZ3Yg" name="outputs CAN message &quot;Outside indicator light&quot;"/>
+        <nestedClassifier xmi:type="uml:UseCase" xmi:id="_P2ML8J4vEeyvvp3yRQZ3Yg" name="validate PLC_ID in the DCP is correct"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ZYx5UJ4rEeyvvp3yRQZ3Yg" name="InteriorLights">
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_oXgF8J4sEeyvvp3yRQZ3Yg" name="operations modes">
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_FWKNoJ4tEeyvvp3yRQZ3Yg" name="" kind="entryPoint"/>
+          <region xmi:type="uml:Region" xmi:id="_qZgZ8J4sEeyvvp3yRQZ3Yg" name="Region1">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_H0OJgJ5DEeyvvp3yRQZ3Yg">
+              <body>?</body>
+            </ownedComment>
+            <transition xmi:type="uml:Transition" xmi:id="_Yxiy0J4uEeyvvp3yRQZ3Yg" source="_F0X-MJ4uEeyvvp3yRQZ3Yg" target="_IOOxgJ4uEeyvvp3yRQZ3Yg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_aI0u0J4uEeyvvp3yRQZ3Yg" source="_IOOxgJ4uEeyvvp3yRQZ3Yg" target="_F0X-MJ4uEeyvvp3yRQZ3Yg"/>
+            <subvertex xmi:type="uml:State" xmi:id="_F0X-MJ4uEeyvvp3yRQZ3Yg" name="Normal">
+              <region xmi:type="uml:Region" xmi:id="_OSJbwJ4uEeyvvp3yRQZ3Yg" name="Region1">
+                <subvertex xmi:type="uml:State" xmi:id="_OSKp4J4uEeyvvp3yRQZ3Yg" name="State1"/>
+              </region>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_IOOxgJ4uEeyvvp3yRQZ3Yg" name="Emergency"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cUz94J4xEeyvvp3yRQZ3Yg" name="Refine" client="_64CXAJ4uEeyvvp3yRQZ3Yg" supplier="_P_y-cJ4wEeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_kmjVIJ4yEeyvvp3yRQZ3Yg" client="_VlDE0J4yEeyvvp3yRQZ3Yg" supplier="_Pnm2AJ4yEeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_URAYIJ40Eeyvvp3yRQZ3Yg" name="useCases">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4df4IJ43Eeyvvp3yRQZ3Yg">
+            <body>how DCP knows we're in emergency mode?		</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8conMJ43Eeyvvp3yRQZ3Yg">
+            <body></body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JpGzEJ45Eeyvvp3yRQZ3Yg">
+            <body>how the DCP knows there is not a valid command comming from the TMS? (binary message)	</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_EkdGEJ48Eeyvvp3yRQZ3Yg">
+            <body>executed even if standby signal is alive	</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_PTJdYJ48Eeyvvp3yRQZ3Yg">
+            <body>executed even if standby signal is alive	</body>
+          </ownedComment>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_ol3_gJ40Eeyvvp3yRQZ3Yg" name="DCP">
+            <generalization xmi:type="uml:Generalization" xmi:id="_2X7aIJ40Eeyvvp3yRQZ3Yg" general="_xQSx8J40Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_IkS1MJ47Eeyvvp3yRQZ3Yg" general="_LnJXoJ46Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_bDeGQJ47Eeyvvp3yRQZ3Yg" general="_QfULAJ47Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_p-Z0gJ47Eeyvvp3yRQZ3Yg" general="_R6qPAJ44Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_rBrPYJ47Eeyvvp3yRQZ3Yg" general="_LZXsQJ44Eeyvvp3yRQZ3Yg"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_pZwTgJ40Eeyvvp3yRQZ3Yg" name="TMS">
+            <generalization xmi:type="uml:Generalization" xmi:id="_dwaxgJ43Eeyvvp3yRQZ3Yg" general="_UosYAJ43Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_FoZWsJ45Eeyvvp3yRQZ3Yg" general="_yffMIJ44Eeyvvp3yRQZ3Yg"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_xQSx8J40Eeyvvp3yRQZ3Yg" name="request to activate/deactivate Interior Lights (all modes)"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_UosYAJ43Eeyvvp3yRQZ3Yg" name="force deactivation of interior lights(emergency) "/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_LZXsQJ44Eeyvvp3yRQZ3Yg" name="request to activate interior lights (Default)"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_R6qPAJ44Eeyvvp3yRQZ3Yg" name="request to deactivate interior lights (standby)"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_yffMIJ44Eeyvvp3yRQZ3Yg" name="force activation/deactivation interior lights (no emergency)"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_LnJXoJ46Eeyvvp3yRQZ3Yg" name="request to put interior lights OFF (manual mode, park brakes released, propulsion ON)"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_QfULAJ47Eeyvvp3yRQZ3Yg" name="request to put interior loghts OFF(auto mode)"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_3-DqcJ40Eeyvvp3yRQZ3Yg" client="_xQSx8J40Eeyvvp3yRQZ3Yg" supplier="_pZwTgJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_iQ0akJ43Eeyvvp3yRQZ3Yg" client="_UosYAJ43Eeyvvp3yRQZ3Yg" supplier="_ol3_gJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_Y9Y1cJ45Eeyvvp3yRQZ3Yg" client="_yffMIJ44Eeyvvp3yRQZ3Yg" supplier="_ol3_gJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_KLsQ0J47Eeyvvp3yRQZ3Yg" client="_LnJXoJ46Eeyvvp3yRQZ3Yg" supplier="_pZwTgJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_fVeuAJ47Eeyvvp3yRQZ3Yg" client="_QfULAJ47Eeyvvp3yRQZ3Yg" supplier="_URAYIJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_sfeqIJ47Eeyvvp3yRQZ3Yg" client="_R6qPAJ44Eeyvvp3yRQZ3Yg" supplier="_pZwTgJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_tvFQ0J47Eeyvvp3yRQZ3Yg" client="_LZXsQJ44Eeyvvp3yRQZ3Yg" supplier="_pZwTgJ40Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_BKV6MJ49Eeyvvp3yRQZ3Yg" name="fsm" classifierBehavior="_DGCx4J49Eeyvvp3yRQZ3Yg">
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_DGCx4J49Eeyvvp3yRQZ3Yg" name="InteriorLights">
+            <region xmi:type="uml:Region" xmi:id="_D8ppwJ49Eeyvvp3yRQZ3Yg" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_K3EMQJ4_Eeyvvp3yRQZ3Yg" source="_FmbZEJ4_Eeyvvp3yRQZ3Yg" target="_G5SvIJ4_Eeyvvp3yRQZ3Yg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_LeoikJ4_Eeyvvp3yRQZ3Yg" source="_G5SvIJ4_Eeyvvp3yRQZ3Yg" target="_Gl5SAJ4_Eeyvvp3yRQZ3Yg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_MA47EJ4_Eeyvvp3yRQZ3Yg" source="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" target="_G5SvIJ4_Eeyvvp3yRQZ3Yg"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_FmbZEJ4_Eeyvvp3yRQZ3Yg" name=""/>
+              <subvertex xmi:type="uml:State" xmi:id="_Gl5SAJ4_Eeyvvp3yRQZ3Yg" name="Interior Lights ON"/>
+              <subvertex xmi:type="uml:State" xmi:id="_G5SvIJ4_Eeyvvp3yRQZ3Yg" name="interior Lights OFF"/>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_mV4NoJ5GEeyvvp3yRQZ3Yg" client="_UosYAJ43Eeyvvp3yRQZ3Yg" supplier="_-BwpkJ5FEeyvvp3yRQZ3Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iLaMkJ4rEeyvvp3yRQZ3Yg" name="PLC_ID">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jhVcsJ42Eeyvvp3yRQZ3Yg" name="plcID">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__vacAJ42Eeyvvp3yRQZ3Yg" annotatedElement="_ujeUcJ42Eeyvvp3yRQZ3Yg">
+            <body>generates an alarm if doesn't match</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_B5r7MJ43Eeyvvp3yRQZ3Yg">
+            <body>plc-ID shoul be in program memory and configured and runing time?	</body>
+          </ownedComment>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_nxlw8J42Eeyvvp3yRQZ3Yg" name="TMS">
+            <generalization xmi:type="uml:Generalization" xmi:id="_zBIykJ42Eeyvvp3yRQZ3Yg" general="_q9GqsJ42Eeyvvp3yRQZ3Yg"/>
+            <generalization xmi:type="uml:Generalization" xmi:id="_z-yGkJ42Eeyvvp3yRQZ3Yg" general="_ujeUcJ42Eeyvvp3yRQZ3Yg"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_q9GqsJ42Eeyvvp3yRQZ3Yg" name="set a PLC_ID at runing time "/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_ujeUcJ42Eeyvvp3yRQZ3Yg" name="Validate the DCP has the right PLC_ID"/>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_7ggLkJ42Eeyvvp3yRQZ3Yg" name="DCP"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_7gx4YJ42Eeyvvp3yRQZ3Yg" client="_q9GqsJ42Eeyvvp3yRQZ3Yg" supplier="_7ggLkJ42Eeyvvp3yRQZ3Yg"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_-FqP8J42Eeyvvp3yRQZ3Yg" client="_ujeUcJ42Eeyvvp3yRQZ3Yg" supplier="_7ggLkJ42Eeyvvp3yRQZ3Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_5FfCAJ4zEeyvvp3yRQZ3Yg" name="Outside Lights">
+        <packagedElement xmi:type="uml:Class" xmi:id="_JeY1AJ4yEeyvvp3yRQZ3Yg" name="OutsideIndicatorLight">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_-cBeUJ4yEeyvvp3yRQZ3Yg">
+            <body>1. TMS sends this info to DCP?&#xD;
+2. DCP trigger this action on TMS	?		</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_kZGAkJ41Eeyvvp3yRQZ3Yg" annotatedElement="_VlDE0J4yEeyvvp3yRQZ3Yg">
+            <body>depending on the emergency state (alarms)&#xD;
+	or the activation button &quot;headlights&quot;	</body>
+          </ownedComment>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_O15FMJ4yEeyvvp3yRQZ3Yg" name="DCP">
+            <generalization xmi:type="uml:Generalization" xmi:id="_iqOyYJ4yEeyvvp3yRQZ3Yg" general="_VlDE0J4yEeyvvp3yRQZ3Yg"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Actor" xmi:id="_Pnm2AJ4yEeyvvp3yRQZ3Yg" name="TMS">
+            <generalization xmi:type="uml:Generalization" xmi:id="_pGPFIJ41Eeyvvp3yRQZ3Yg" general="_d18coJ41Eeyvvp3yRQZ3Yg"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_VlDE0J4yEeyvvp3yRQZ3Yg" name="request to activate the &quot;Outside Indicator Light&quot;"/>
+          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_d18coJ41Eeyvvp3yRQZ3Yg" name="outputs Outside Indicator Light"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HTwIcJ49Eeyvvp3yRQZ3Yg" name="OutsideLightFSM" classifierBehavior="_JszqgJ49Eeyvvp3yRQZ3Yg">
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JszqgJ49Eeyvvp3yRQZ3Yg" name="OutsideLights">
+            <region xmi:type="uml:Region" xmi:id="_K-bDYJ49Eeyvvp3yRQZ3Yg" name="Region1">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_ZrW8cJ4-Eeyvvp3yRQZ3Yg">
+                <body>should be a acceptance criteria from the TMS?</body>
+              </ownedComment>
+              <transition xmi:type="uml:Transition" xmi:id="_bXs-8J49Eeyvvp3yRQZ3Yg" source="_SmwtwJ49Eeyvvp3yRQZ3Yg" target="_Tf5VMJ49Eeyvvp3yRQZ3Yg"/>
+              <transition xmi:type="uml:Transition" xmi:id="_cFU58J49Eeyvvp3yRQZ3Yg" guard="_Kthj0J5BEeyvvp3yRQZ3Yg" source="_Tf5VMJ49Eeyvvp3yRQZ3Yg" target="_TyT64J49Eeyvvp3yRQZ3Yg">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_J89J4J4-Eeyvvp3yRQZ3Yg">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_PCDbcJ4-Eeyvvp3yRQZ3Yg">
+                    <language>C</language>
+                    <body>(bCheckForAlarms == True)</body>
+                  </specification>
+                </ownedRule>
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Kthj0J5BEeyvvp3yRQZ3Yg">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_SvJQ4J5BEeyvvp3yRQZ3Yg">
+                    <language>C</language>
+                    <body>(bButtonHeadLights== eTrue) || (bCheckForEmergencyState()) == eTrue)</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Tpb2QJ4-Eeyvvp3yRQZ3Yg">
+                  <language>C</language>
+                  <body>sendCanMessage()</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_AcoDIJ4-Eeyvvp3yRQZ3Yg" name="EMERGENCY_OR_BUTTON_PRESENT" event="_p4iyMJ49Eeyvvp3yRQZ3Yg"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_cotT0J49Eeyvvp3yRQZ3Yg" guard="_qT6DEJ4-Eeyvvp3yRQZ3Yg" source="_TyT64J49Eeyvvp3yRQZ3Yg" target="_Tf5VMJ49Eeyvvp3yRQZ3Yg">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_qT6DEJ4-Eeyvvp3yRQZ3Yg">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_tdbYwJ4-Eeyvvp3yRQZ3Yg">
+                    <language>C</language>
+                    <body>(bCheckEmergencyState== eFalse ) || (bButtonHeadlights == eTrue)</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_w2YRkJ4-Eeyvvp3yRQZ3Yg">
+                  <language>C</language>
+                  <body>cCanMessage()</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_mnn-kJ4-Eeyvvp3yRQZ3Yg" event="_p4iyMJ49Eeyvvp3yRQZ3Yg"/>
+              </transition>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_SmwtwJ49Eeyvvp3yRQZ3Yg" name=""/>
+              <subvertex xmi:type="uml:State" xmi:id="_Tf5VMJ49Eeyvvp3yRQZ3Yg" name="OutsideLight_OFF">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_uSZKgJ5BEeyvvp3yRQZ3Yg">
+                  <language>C</language>
+                  <body>indicatorsColor == WHITE</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_TyT64J49Eeyvvp3yRQZ3Yg" name="OutsideLight_ON">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rYMqQJ5BEeyvvp3yRQZ3Yg">
+                  <language>C</language>
+                  <body>indicatorsColor == GREEN</body>
+                </entry>
+              </subvertex>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_0U7LIJ41Eeyvvp3yRQZ3Yg" name="" client="_P2ML8J4vEeyvvp3yRQZ3Yg" supplier="_tWpjsJ4wEeyvvp3yRQZ3Yg"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fmHVkJ48Eeyvvp3yRQZ3Yg" name="Operations Modes">
+        <packagedElement xmi:type="uml:Class" xmi:id="_m1Yy8J4sEeyvvp3yRQZ3Yg" name="Block1"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mGx18J4rEeyvvp3yRQZ3Yg" name="Events">
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_qmN1sJ4rEeyvvp3yRQZ3Yg" name="cTmsOutsideIndicatorLight"/>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_4tX9oJ4rEeyvvp3yRQZ3Yg" name="cTmsInteriorPasengerLights"/>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_Z_sS4J4sEeyvvp3yRQZ3Yg" name="cPlc_ID"/>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_p4iyMJ49Eeyvvp3yRQZ3Yg" name="checkForEmergencyState OR Button">
+        <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_1sndMJ49Eeyvvp3yRQZ3Yg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
+          <language>C</language>
+          <body>if( bCheckForAlarms == True) || (bCheckForbutton == eTrue)</body>
+        </changeExpression>
+      </packagedElement>
+      <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_F6ItUJ5BEeyvvp3yRQZ3Yg" name="bButtonHeadights(void)"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RKoMIJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RKr2gJ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNAKsJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNAxwJ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RND1EJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNEcIJ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNEcIZ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNEcIp4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNFDMJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNFDMZ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNFDMp4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNFqQJ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNFqQZ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNFqQp4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNGRUJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNGRUZ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNG4YJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNG4YZ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_RNHfcJ4rEeyvvp3yRQZ3Yg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RNHfcZ4rEeyvvp3yRQZ3Yg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Blocks:Block xmi:id="_m1gHsJ4sEeyvvp3yRQZ3Yg" base_Class="_m1Yy8J4sEeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_nW1oQJ4uEeyvvp3yRQZ3Yg" base_Class="_nWxW0J4uEeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_Jxu5sJ4wEeyvvp3yRQZ3Yg" base_Class="_Jxr2YJ4wEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_P_1asJ4wEeyvvp3yRQZ3Yg" base_NamedElement="_P_y-cJ4wEeyvvp3yRQZ3Yg" id="2.1.3.2.6.1 - Miscellaneous Hardwired Signals" text="DCP should generate an request to the TMS, to activate the  &quot;Outside Indicator light&quot; when at least a fault is present on the system.&#x9;" base_Class="_P_y-cJ4wEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_tWsnAJ4wEeyvvp3yRQZ3Yg" base_NamedElement="_tWpjsJ4wEeyvvp3yRQZ3Yg" id="2.1.3.2.6.3" text="TMS should be able to validate the PLC ID identification on the DCP at runing time.&#x9;" base_Class="_tWpjsJ4wEeyvvp3yRQZ3Yg"/>
+  <Requirements:Refine xmi:id="_cU2aIJ4xEeyvvp3yRQZ3Yg" base_DirectedRelationship="_cUz94J4xEeyvvp3yRQZ3Yg" base_Abstraction="_cUz94J4xEeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_JeaqMJ4yEeyvvp3yRQZ3Yg" base_Class="_JeY1AJ4yEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_TJgaAJ4zEeyvvp3yRQZ3Yg" base_NamedElement="_TJdWsJ4zEeyvvp3yRQZ3Yg" id="2.1.3.2.6.2" base_Class="_TJdWsJ4zEeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_URDbcJ40Eeyvvp3yRQZ3Yg" base_Class="_URAYIJ40Eeyvvp3yRQZ3Yg"/>
+  <Requirements:Refine xmi:id="_0U9AUJ41Eeyvvp3yRQZ3Yg" base_DirectedRelationship="_0U7LIJ41Eeyvvp3yRQZ3Yg" base_Abstraction="_0U7LIJ41Eeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_jhX48J42Eeyvvp3yRQZ3Yg" base_Class="_jhVcsJ42Eeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_BKYWcJ49Eeyvvp3yRQZ3Yg" base_Class="_BKV6MJ49Eeyvvp3yRQZ3Yg"/>
+  <Blocks:Block xmi:id="_HTxWkJ49Eeyvvp3yRQZ3Yg" base_Class="_HTwIcJ49Eeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_-BzF0J5FEeyvvp3yRQZ3Yg" base_NamedElement="_-BwpkJ5FEeyvvp3yRQZ3Yg" id="2.1.3.2.6.2.1" text="the DCP should activate the Interior lights indicator if EMERGENCY MODE is presented." base_Class="_-BwpkJ5FEeyvvp3yRQZ3Yg"/>
+  <Requirements:Refine xmi:id="_mV6C0J5GEeyvvp3yRQZ3Yg" base_DirectedRelationship="_mV4NoJ5GEeyvvp3yRQZ3Yg" base_Abstraction="_mV4NoJ5GEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_-QdXcJ5GEeyvvp3yRQZ3Yg" base_NamedElement="_-Qa7MJ5GEeyvvp3yRQZ3Yg" id="2.1.3.2.6.2, 2.1.3.2.6.3" text="The DCP should accept the force activation/deactivation interior lights (no emergency) from the TMS." base_Class="_-Qa7MJ5GEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_T3GIsJ5HEeyvvp3yRQZ3Yg" base_NamedElement="_T3DFYJ5HEeyvvp3yRQZ3Yg" id="2.1.3.2.6.4, 2.1.3.2.6.5" text="DCP should generate a request to the TMS to activate the passanger lights, when the button is activated. (all operation modes)" base_Class="_T3DFYJ5HEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_rHY_YJ5HEeyvvp3yRQZ3Yg" base_NamedElement="_rHWjIJ5HEeyvvp3yRQZ3Yg" id="2.1.3.2.6.6" text="the DCP should power OFF the interior light indicator if in manual mode, park brakes released, and propulsion is enabled.&#x9;" base_Class="_rHWjIJ5HEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_9UZiYJ5HEeyvvp3yRQZ3Yg" base_NamedElement="_9UXtMJ5HEeyvvp3yRQZ3Yg" id="2.1.3.2.6.7" text="The DCP should power off the interior lights of the respective car, if in automatic mode the headlights are ON." base_Class="_9UXtMJ5HEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_RzDX4J5IEeyvvp3yRQZ3Yg" base_NamedElement="_RzA7oJ5IEeyvvp3yRQZ3Yg" id="2.1.3.2.6.8" text="The DCP should power OFF the interior lights in all the cars in standby mode." base_Class="_RzA7oJ5IEeyvvp3yRQZ3Yg"/>
+  <Requirements:Requirement xmi:id="_dqgHAJ5IEeyvvp3yRQZ3Yg" base_NamedElement="_dqdqwJ5IEeyvvp3yRQZ3Yg" id="2.1.3.2.6.9" text="The DCP should power the interior lights ON, if in Default mode." base_Class="_dqdqwJ5IEeyvvp3yRQZ3Yg"/>
+</xmi:XMI>

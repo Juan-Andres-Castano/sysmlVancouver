@@ -1,0 +1,5 @@
+Default\ execution\ engine=org.eclipse.papyrus.moka.fuml
+MODEL_VALIDATION_ON_LAUNCH=true
+MQTT_SERVER_PATH=C\:\\Program Files\\mosquitto\\mosquitto.exe
+MQTT_SERVER_PORT=1883
+eclipse.preferences.version=1
